@@ -13,9 +13,10 @@ let docopt = require('docopt-js');
 
 let cli = __parser__(function () {/*!
 Usage:
-  lorem all
-  lorem get <id>
-  lorem -h | --help | --version
+  node index.js all
+  node index.js get <id>
+  node index.js -h | --help
+  node index.js --version
 */});
 
 function __parser__ (f) {
