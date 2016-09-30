@@ -1,0 +1,18 @@
+{
+  "name": "clipsum",
+  "version": "0.0.1",
+  "description": "CLI for lorem ipsum in JSON format.",
+  "main": "index.js",
+  "dependencies": {
+    "docopt-js": "^1.0.1",
+    "es6-promise": "^4.0.3",
+    "promise-defer": "^1.0.0",
+    "request": "^2.75.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "content generator"
+  ],
+  "author": "nerdfiles <nerdfiles@gmail.com>",
+  "license": "WTFPL"
+}
