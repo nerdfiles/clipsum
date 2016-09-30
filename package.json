@@ -4,6 +4,7 @@
   "description": "CLI for lorem ipsum in JSON format.",
   "main": "index.js",
   "dependencies": {
+    "bluebird": "^3.4.6",
     "docopt-js": "^1.0.1",
     "es6-promise": "^4.0.3",
     "promise-defer": "^1.0.0",
