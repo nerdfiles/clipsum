@@ -13,7 +13,7 @@ Usage:
   clipsum get <contenttype> [<id>]
   clipsum -h | --help
   clipsum --version
-*/});
+*/})
 
 function __parser__ (f) {
   /// @name __parser__
@@ -22,7 +22,7 @@ function __parser__ (f) {
 
   return f.toString().
     replace(/^[^\/]+\/\*!?/, '').
-    replace(/\*\/[^\/]+$/, '');
+    replace(/\*\/[^\/]+$/, '')
 }
 
 module.exports = cli
