@@ -48,7 +48,7 @@ function __cli__ (config) {
       let requestString = ct + '/' + $$id
 
       if (ct === 'post_comments') {
-        requestString = 'posts/' + $$id + '/comments'
+        requestString = `posts/${$$id}/comments`
       }
 
       if (ct === 'comments') {
