@@ -1,0 +1,66 @@
+{
+    "$AutoBodyShop": {
+        "rdfsClass": "AutoBodyShop",
+        "rdfsComment": "Auto body shop.",
+        "rdfsSubClassOf": {
+            "title": "AutomotiveBusiness",
+            "url": "http://schema.org/AutomotiveBusiness"
+        }
+    },
+    "$AutoDealer": {
+        "rdfsClass": "AutoDealer",
+        "rdfsComment": "An car dealership.",
+        "rdfsSubClassOf": {
+            "title": "AutomotiveBusiness",
+            "url": "http://schema.org/AutomotiveBusiness"
+        }
+    },
+    "$AutoPartsStore": {
+        "rdfsClass": "AutoPartsStore",
+        "rdfsComment": "An auto parts store.",
+        "rdfsSubClassOf": {
+            "title": "Store",
+            "url": "http://schema.org/Store"
+        }
+    },
+    "$AutoRental": {
+        "rdfsClass": "AutoRental",
+        "rdfsComment": "A car rental business.",
+        "rdfsSubClassOf": {
+            "title": "AutomotiveBusiness",
+            "url": "http://schema.org/AutomotiveBusiness"
+        }
+    },
+    "$AutoRepair": {
+        "rdfsClass": "AutoRepair",
+        "rdfsComment": "Car repair business.",
+        "rdfsSubClassOf": {
+            "title": "AutomotiveBusiness",
+            "url": "http://schema.org/AutomotiveBusiness"
+        }
+    },
+    "$AutoWash": {
+        "rdfsClass": "AutoWash",
+        "rdfsComment": "A car wash business.",
+        "rdfsSubClassOf": {
+            "title": "AutomotiveBusiness",
+            "url": "http://schema.org/AutomotiveBusiness"
+        }
+    },
+    "$AutomatedTeller": {
+        "rdfsClass": "AutomatedTeller",
+        "rdfsComment": "ATM/cash machine.",
+        "rdfsSubClassOf": {
+            "title": "FinancialService",
+            "url": "http://schema.org/FinancialService"
+        }
+    },
+    "$AutomotiveBusiness": {
+        "rdfsClass": "AutomotiveBusiness",
+        "rdfsComment": "Car repair, sales, or parts.",
+        "rdfsSubClassOf": {
+            "title": "LocalBusiness",
+            "url": "http://schema.org/LocalBusiness"
+        }
+    }
+}

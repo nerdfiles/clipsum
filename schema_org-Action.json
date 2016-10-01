@@ -1,0 +1,874 @@
+{
+    "$AcceptAction": {
+        "rdfsClass": "AcceptAction",
+        "rdfsComment": "The act of committing to/adopting an object.\\n\\nRelated actions:\\n\\n* [[RejectAction]]: The antonym of AcceptAction.",
+        "rdfsSubClassOf": {
+            "title": "AllocateAction",
+            "url": "http://schema.org/AllocateAction"
+        }
+    },
+    "$AchieveAction": {
+        "rdfsClass": "AchieveAction",
+        "rdfsComment": "The act of accomplishing something via previous efforts. It is an instantaneous action rather than an ongoing process.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$Action": {
+        "rdfsClass": "Action",
+        "rdfsComment": "An action performed by a direct \nagent and indirect participants upon a direct object. Optionally happens\n at a location with the help of an inanimate instrument. The execution \nof the action may produce a result. Specific action sub-type \ndocumentation specifies the exact expectation of each \nargument/role.\\n\\nSee also [blog \npost](http://blog.schema.org/2014/04/announcing-schemaorg-actions.html) \nand [Actions overview document](http://schema.org/docs/actions.html).",
+        "rdfsSubClassOf": {
+            "title": "Thing",
+            "url": "http://schema.org/Thing"
+        }
+    },
+    "$ActionStatusType": {
+        "rdfsClass": "ActionStatusType",
+        "rdfsComment": "The status of an Action.",
+        "rdfsSubClassOf": {
+            "title": "Enumeration",
+            "url": "http://schema.org/Enumeration"
+        }
+    },
+    "$ActivateAction": {
+        "rdfsClass": "ActivateAction",
+        "rdfsComment": "The act of starting or activating a device or application (e.g. starting a timer or turning on a flashlight).",
+        "rdfsSubClassOf": {
+            "title": "ControlAction",
+            "url": "http://schema.org/ControlAction"
+        }
+    },
+    "$AddAction": {
+        "rdfsClass": "AddAction",
+        "rdfsComment": "The act of editing by adding an object to a collection.",
+        "rdfsSubClassOf": {
+            "title": "UpdateAction",
+            "url": "http://schema.org/UpdateAction"
+        }
+    },
+    "$AgreeAction": {
+        "rdfsClass": "AgreeAction",
+        "rdfsComment": "The act of expressing a consistency \nof opinion with the object. An agent agrees to/about an object (a \nproposition, topic or theme) with participants.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$AllocateAction": {
+        "rdfsClass": "AllocateAction",
+        "rdfsComment": "The act of organizing tasks/objects/events by associating resources to it.",
+        "rdfsSubClassOf": {
+            "title": "OrganizeAction",
+            "url": "http://schema.org/OrganizeAction"
+        }
+    },
+    "$AppendAction": {
+        "rdfsClass": "AppendAction",
+        "rdfsComment": "The act of inserting at the end if an ordered collection.",
+        "rdfsSubClassOf": {
+            "title": "InsertAction",
+            "url": "http://schema.org/InsertAction"
+        }
+    },
+    "$ApplyAction": {
+        "rdfsClass": "ApplyAction",
+        "rdfsComment": "The act of registering to an \norganization/service without the guarantee to receive it.\\n\\nRelated \nactions:\\n\\n* [[RegisterAction]]: Unlike RegisterAction, ApplyAction has\n no guarantees that the application will be accepted.",
+        "rdfsSubClassOf": {
+            "title": "OrganizeAction",
+            "url": "http://schema.org/OrganizeAction"
+        }
+    },
+    "$ArriveAction": {
+        "rdfsClass": "ArriveAction",
+        "rdfsComment": "The act of arriving at a place. An agent arrives at a destination from a fromLocation, optionally with participants.",
+        "rdfsSubClassOf": {
+            "title": "MoveAction",
+            "url": "http://schema.org/MoveAction"
+        }
+    },
+    "$AskAction": {
+        "rdfsClass": "AskAction",
+        "rdfsComment": "The act of posing a question / favor\n to someone.\\n\\nRelated actions:\\n\\n* [[ReplyAction]]: Appears generally\n as a response to AskAction.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$AssessAction": {
+        "rdfsClass": "AssessAction",
+        "rdfsComment": "The act of forming one's opinion, reaction or sentiment.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$AssignAction": {
+        "rdfsClass": "AssignAction",
+        "rdfsComment": "The act of allocating an action/event/task to some destination (someone or something).",
+        "rdfsSubClassOf": {
+            "title": "AllocateAction",
+            "url": "http://schema.org/AllocateAction"
+        }
+    },
+    "$AuthorizeAction": {
+        "rdfsClass": "AuthorizeAction",
+        "rdfsComment": "The act of granting permission to an object.",
+        "rdfsSubClassOf": {
+            "title": "AllocateAction",
+            "url": "http://schema.org/AllocateAction"
+        }
+    },
+    "$BefriendAction": {
+        "rdfsClass": "BefriendAction",
+        "rdfsComment": "The act of forming a personal \nconnection with someone (object) \nmutually/bidirectionally/symmetrically.\\n\\nRelated actions:\\n\\n* \n[[FollowAction]]: Unlike FollowAction, BefriendAction implies that the \nconnection is reciprocal.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$BookmarkAction": {
+        "rdfsClass": "BookmarkAction",
+        "rdfsComment": "An agent bookmarks/flags/labels/tags/marks an object.",
+        "rdfsSubClassOf": {
+            "title": "OrganizeAction",
+            "url": "http://schema.org/OrganizeAction"
+        }
+    },
+    "$BorrowAction": {
+        "rdfsClass": "BorrowAction",
+        "rdfsComment": "The act of obtaining an object under\n an agreement to return it at a later date. Reciprocal of \nLendAction.\\n\\nRelated actions:\\n\\n* [[LendAction]]: Reciprocal of \nBorrowAction.",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$BuyAction": {
+        "rdfsClass": "BuyAction",
+        "rdfsComment": "The act of giving money to a seller \nin exchange for goods or services rendered. An agent buys an object, \nproduct, or service from a seller for a price. Reciprocal of SellAction.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$CancelAction": {
+        "rdfsClass": "CancelAction",
+        "rdfsComment": "The act of asserting that a future \nevent/action is no longer going to happen.\\n\\nRelated actions:\\n\\n* \n[[ConfirmAction]]: The antonym of CancelAction.",
+        "rdfsSubClassOf": {
+            "title": "PlanAction",
+            "url": "http://schema.org/PlanAction"
+        }
+    },
+    "$CheckAction": {
+        "rdfsClass": "CheckAction",
+        "rdfsComment": "An agent inspects/determines/investigates/inquire or examine an object's accuracy/quality/condition or state.",
+        "rdfsSubClassOf": {
+            "title": "FindAction",
+            "url": "http://schema.org/FindAction"
+        }
+    },
+    "$CheckInAction": {
+        "rdfsClass": "CheckInAction",
+        "rdfsComment": "The act of an agent communicating \n(service provider, social media, etc) their arrival by \nregistering/confirming for a previously reserved service (e.g. flight \ncheck in) or at a place (e.g. hotel), possibly resulting in a result \n(boarding pass, etc).\\n\\nRelated actions:\\n\\n* [[CheckOutAction]]: The \nantonym of CheckInAction.\\n* [[ArriveAction]]: Unlike ArriveAction, \nCheckInAction implies that the agent is informing/confirming the start \nof a previously reserved service.\\n* [[ConfirmAction]]: Unlike \nConfirmAction, CheckInAction implies that the agent is \ninforming/confirming the *start* of a previously reserved service rather\n than its validity/existence.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$CheckOutAction": {
+        "rdfsClass": "CheckOutAction",
+        "rdfsComment": "The act of an agent communicating \n(service provider, social media, etc) their departure of a previously \nreserved service (e.g. flight check in) or place (e.g. \nhotel).\\n\\nRelated actions:\\n\\n* [[CheckInAction]]: The antonym of \nCheckOutAction.\\n* [[DepartAction]]: Unlike DepartAction, CheckOutAction\n implies that the agent is informing/confirming the end of a previously \nreserved service.\\n* [[CancelAction]]: Unlike CancelAction, \nCheckOutAction implies that the agent is informing/confirming the end of\n a previously reserved service.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$ChooseAction": {
+        "rdfsClass": "ChooseAction",
+        "rdfsComment": "The act of expressing a preference from a set of options or a large or unbounded set of choices/options.",
+        "rdfsSubClassOf": {
+            "title": "AssessAction",
+            "url": "http://schema.org/AssessAction"
+        }
+    },
+    "$CommentAction": {
+        "rdfsClass": "CommentAction",
+        "rdfsComment": "The act of generating a comment about a subject.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$CommunicateAction": {
+        "rdfsClass": "CommunicateAction",
+        "rdfsComment": "The act of conveying information to \nanother person via a communication medium (instrument) such as speech, \nemail, or telephone conversation.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$ConfirmAction": {
+        "rdfsClass": "ConfirmAction",
+        "rdfsComment": "The act of notifying someone that a \nfuture event/action is going to happen as expected.\\n\\nRelated \nactions:\\n\\n* [[CancelAction]]: The antonym of ConfirmAction.",
+        "rdfsSubClassOf": {
+            "title": "InformAction",
+            "url": "http://schema.org/InformAction"
+        }
+    },
+    "$ConsumeAction": {
+        "rdfsClass": "ConsumeAction",
+        "rdfsComment": "The act of ingesting information/resources/food.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$ControlAction": {
+        "rdfsClass": "ControlAction",
+        "rdfsComment": "An agent controls a device or application.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$CookAction": {
+        "rdfsClass": "CookAction",
+        "rdfsComment": "The act of producing/preparing food.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    },
+    "$CreateAction": {
+        "rdfsClass": "CreateAction",
+        "rdfsComment": "The act of deliberately creating/producing/generating/building a result out of the agent.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$DeactivateAction": {
+        "rdfsClass": "DeactivateAction",
+        "rdfsComment": "The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight).",
+        "rdfsSubClassOf": {
+            "title": "ControlAction",
+            "url": "http://schema.org/ControlAction"
+        }
+    },
+    "$DeleteAction": {
+        "rdfsClass": "DeleteAction",
+        "rdfsComment": "The act of editing a recipient by removing one of its objects.",
+        "rdfsSubClassOf": {
+            "title": "UpdateAction",
+            "url": "http://schema.org/UpdateAction"
+        }
+    },
+    "$DepartAction": {
+        "rdfsClass": "DepartAction",
+        "rdfsComment": "The act of  departing from a place. An agent departs from an fromLocation for a destination, optionally with participants.",
+        "rdfsSubClassOf": {
+            "title": "MoveAction",
+            "url": "http://schema.org/MoveAction"
+        }
+    },
+    "$DisagreeAction": {
+        "rdfsClass": "DisagreeAction",
+        "rdfsComment": "The act of expressing a difference \nof opinion with the object. An agent disagrees to/about an object (a \nproposition, topic or theme) with participants.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$DiscoverAction": {
+        "rdfsClass": "DiscoverAction",
+        "rdfsComment": "The act of discovering/finding an object.",
+        "rdfsSubClassOf": {
+            "title": "FindAction",
+            "url": "http://schema.org/FindAction"
+        }
+    },
+    "$DislikeAction": {
+        "rdfsClass": "DislikeAction",
+        "rdfsComment": "The act of expressing a negative \nsentiment about the object. An agent dislikes an object (a proposition, \ntopic or theme) with participants.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$DonateAction": {
+        "rdfsClass": "DonateAction",
+        "rdfsComment": "The act of providing goods, services, or money without compensation, often for philanthropic reasons.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$DownloadAction": {
+        "rdfsClass": "DownloadAction",
+        "rdfsComment": "The act of downloading an object.",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$DrawAction": {
+        "rdfsClass": "DrawAction",
+        "rdfsComment": "The act of producing a visual/graphical representation of an object, typically with a pen/pencil and paper as instruments.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    },
+    "$DrinkAction": {
+        "rdfsClass": "DrinkAction",
+        "rdfsComment": "The act of swallowing liquids.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$EatAction": {
+        "rdfsClass": "EatAction",
+        "rdfsComment": "The act of swallowing solid objects.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$EndorseAction": {
+        "rdfsClass": "EndorseAction",
+        "rdfsComment": "An agent approves/certifies/likes/supports/sanction an object.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$ExerciseAction": {
+        "rdfsClass": "ExerciseAction",
+        "rdfsComment": "The act of participating in exertive activity for the purposes of improving health and fitness.",
+        "rdfsSubClassOf": {
+            "title": "PlayAction",
+            "url": "http://schema.org/PlayAction"
+        }
+    },
+    "$FilmAction": {
+        "rdfsClass": "FilmAction",
+        "rdfsComment": "The act of capturing sound and moving images on film, video, or digitally.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    },
+    "$FindAction": {
+        "rdfsClass": "FindAction",
+        "rdfsComment": "TThe act of finding an \nobject.\\n\\nRelated actions:\\n\\n* [[SearchAction]]: FindAction is \ngenerally lead by a SearchAction, but not necessarily.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$FollowAction": {
+        "rdfsClass": "FollowAction",
+        "rdfsComment": "The act of forming a personal \nconnection with someone/something (object) \nunidirectionally/asymmetrically to get updates polled from.\\n\\nRelated \nactions:\\n\\n* [[BefriendAction]]: Unlike BefriendAction, FollowAction \nimplies that the connection is *not* necessarily reciprocal.\\n* \n[[SubscribeAction]]: Unlike SubscribeAction, FollowAction implies that \nthe follower acts as an active agent constantly/actively polling for \nupdates.\\n* [[RegisterAction]]: Unlike RegisterAction, FollowAction \nimplies that the agent is interested in continuing receiving updates \nfrom the object.\\n* [[JoinAction]]: Unlike JoinAction, FollowAction \nimplies that the agent is interested in getting updates from the \nobject.\\n* [[TrackAction]]: Unlike TrackAction, FollowAction refers to \nthe polling of updates of all aspects of animate objects rather than the\n location of inanimate objects (e.g. you track a package, but you don't \nfollow it).",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$GiveAction": {
+        "rdfsClass": "GiveAction",
+        "rdfsComment": "The act of transferring ownership of\n an object to a destination. Reciprocal of TakeAction.\\n\\nRelated \nactions:\\n\\n* [[TakeAction]]: Reciprocal of GiveAction.\\n* \n[[SendAction]]: Unlike SendAction, GiveAction implies that ownership is \nbeing transferred (e.g. I may send my laptop to you, but that doesn't \nmean I'm giving it to you).",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$IgnoreAction": {
+        "rdfsClass": "IgnoreAction",
+        "rdfsComment": "The act of intentionally disregarding the object. An agent ignores an object.",
+        "rdfsSubClassOf": {
+            "title": "AssessAction",
+            "url": "http://schema.org/AssessAction"
+        }
+    },
+    "$InformAction": {
+        "rdfsClass": "InformAction",
+        "rdfsComment": "The act of notifying someone of information pertinent to them, with no expectation of a response.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$InsertAction": {
+        "rdfsClass": "InsertAction",
+        "rdfsComment": "The act of adding at a specific location in an ordered collection.",
+        "rdfsSubClassOf": {
+            "title": "AddAction",
+            "url": "http://schema.org/AddAction"
+        }
+    },
+    "$InstallAction": {
+        "rdfsClass": "InstallAction",
+        "rdfsComment": "The act of installing an application.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$InteractAction": {
+        "rdfsClass": "InteractAction",
+        "rdfsComment": "The act of interacting with another person or organization.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$InviteAction": {
+        "rdfsClass": "InviteAction",
+        "rdfsComment": "The act of asking someone to attend an event. Reciprocal of RsvpAction.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$JoinAction": {
+        "rdfsClass": "JoinAction",
+        "rdfsComment": "An agent joins an event/group with \nparticipants/friends at a location.\\n\\nRelated actions:\\n\\n* \n[[RegisterAction]]: Unlike RegisterAction, JoinAction refers to joining a\n group/team of people.\\n* [[SubscribeAction]]: Unlike SubscribeAction, \nJoinAction does not imply that you'll be receiving updates.\\n* \n[[FollowAction]]: Unlike FollowAction, JoinAction does not imply that \nyou'll be polling for updates.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$LeaveAction": {
+        "rdfsClass": "LeaveAction",
+        "rdfsComment": "An agent leaves an event / group \nwith participants/friends at a location.\\n\\nRelated actions:\\n\\n* \n[[JoinAction]]: The antonym of LeaveAction.\\n* [[UnRegisterAction]]: \nUnlike UnRegisterAction, LeaveAction implies leaving a group/team of \npeople rather than a service.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$LendAction": {
+        "rdfsClass": "LendAction",
+        "rdfsComment": "The act of providing an object under\n an agreement that it will be returned at a later date. Reciprocal of \nBorrowAction.\\n\\nRelated actions:\\n\\n* [[BorrowAction]]: Reciprocal of \nLendAction.",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$LikeAction": {
+        "rdfsClass": "LikeAction",
+        "rdfsComment": "The act of expressing a positive \nsentiment about the object. An agent likes an object (a proposition, \ntopic or theme) with participants.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$ListenAction": {
+        "rdfsClass": "ListenAction",
+        "rdfsComment": "The act of consuming audio content.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$LoseAction": {
+        "rdfsClass": "LoseAction",
+        "rdfsComment": "The act of being defeated in a competitive activity.",
+        "rdfsSubClassOf": {
+            "title": "AchieveAction",
+            "url": "http://schema.org/AchieveAction"
+        }
+    },
+    "$MarryAction": {
+        "rdfsClass": "MarryAction",
+        "rdfsComment": "The act of marrying a person.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$MoveAction": {
+        "rdfsClass": "MoveAction",
+        "rdfsComment": "The act of an agent relocating to a \nplace.\\n\\nRelated actions:\\n\\n* [[TransferAction]]: Unlike \nTransferAction, the subject of the move is a living Person or \nOrganization rather than an inanimate object.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$OrderAction": {
+        "rdfsClass": "OrderAction",
+        "rdfsComment": "An agent orders an object/product/service to be delivered/sent.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$OrganizeAction": {
+        "rdfsClass": "OrganizeAction",
+        "rdfsComment": "The act of manipulating/administering/supervising/controlling one or more objects.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$PaintAction": {
+        "rdfsClass": "PaintAction",
+        "rdfsComment": "The act of producing a painting, typically with paint and canvas as instruments.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    },
+    "$PayAction": {
+        "rdfsClass": "PayAction",
+        "rdfsComment": "An agent pays a price to a participant.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$PerformAction": {
+        "rdfsClass": "PerformAction",
+        "rdfsComment": "The act of participating in performance arts.",
+        "rdfsSubClassOf": {
+            "title": "PlayAction",
+            "url": "http://schema.org/PlayAction"
+        }
+    },
+    "$PhotographAction": {
+        "rdfsClass": "PhotographAction",
+        "rdfsComment": "The act of capturing still images of objects using a camera.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    },
+    "$PlanAction": {
+        "rdfsClass": "PlanAction",
+        "rdfsComment": "The act of planning the execution of an event/task/action/reservation/plan to a future date.",
+        "rdfsSubClassOf": {
+            "title": "OrganizeAction",
+            "url": "http://schema.org/OrganizeAction"
+        }
+    },
+    "$PlayAction": {
+        "rdfsClass": "PlayAction",
+        "rdfsComment": "The act of \nplaying/exercising/training/performing for enjoyment, leisure, \nrecreation, Competition or exercise.\\n\\nRelated actions:\\n\\n* \n[[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), \nPlayAction refers to performing for an audience or at an event, rather \nthan consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is \nunder ConsumeAction), PlayAction refers to showing/displaying for an \naudience or at an event, rather than consuming visual content.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$PrependAction": {
+        "rdfsClass": "PrependAction",
+        "rdfsComment": "The act of inserting at the beginning if an ordered collection.",
+        "rdfsSubClassOf": {
+            "title": "InsertAction",
+            "url": "http://schema.org/InsertAction"
+        }
+    },
+    "$QuoteAction": {
+        "rdfsClass": "QuoteAction",
+        "rdfsComment": "An agent quotes/estimates/appraises an object/product/service with a price at a location/store.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$ReactAction": {
+        "rdfsClass": "ReactAction",
+        "rdfsComment": "The act of responding instinctively and emotionally to an object, expressing a sentiment.",
+        "rdfsSubClassOf": {
+            "title": "AssessAction",
+            "url": "http://schema.org/AssessAction"
+        }
+    },
+    "$ReadAction": {
+        "rdfsClass": "ReadAction",
+        "rdfsComment": "The act of consuming written content.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$ReceiveAction": {
+        "rdfsClass": "ReceiveAction",
+        "rdfsComment": "The act of physically/electronically\n taking delivery of an object thathas been transferred from an origin to\n a destination. Reciprocal of SendAction.\\n\\nRelated actions:\\n\\n* \n[[SendAction]]: The reciprocal of ReceiveAction.\\n* [[TakeAction]]: \nUnlike TakeAction, ReceiveAction does not imply that the ownership has \nbeen transfered (e.g. I can receive a package, but it does not mean the \npackage is now mine).",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$RegisterAction": {
+        "rdfsClass": "RegisterAction",
+        "rdfsComment": "The act of registering to be a user \nof a service, product or web page.\\n\\nRelated actions:\\n\\n* \n[[JoinAction]]: Unlike JoinAction, RegisterAction implies you are \nregistering to be a user of a service, *not* a group/team of people.\\n* \n[FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that \nthe agent is expecting to poll for updates from the object.\\n* \n[[SubscribeAction]]: Unlike SubscribeAction, RegisterAction doesn't \nimply that the agent is expecting updates from the object.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$RejectAction": {
+        "rdfsClass": "RejectAction",
+        "rdfsComment": "The act of rejecting to/adopting an object.\\n\\nRelated actions:\\n\\n* [[AcceptAction]]: The antonym of RejectAction.",
+        "rdfsSubClassOf": {
+            "title": "AllocateAction",
+            "url": "http://schema.org/AllocateAction"
+        }
+    },
+    "$RentAction": {
+        "rdfsClass": "RentAction",
+        "rdfsComment": "The act of giving money in return \nfor temporary use, but not ownership, of an object such as a vehicle or \nproperty. For example, an agent rents a property from a landlord in \nexchange for a periodic payment.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$ReplaceAction": {
+        "rdfsClass": "ReplaceAction",
+        "rdfsComment": "The act of editing a recipient by replacing an old object with a new object.",
+        "rdfsSubClassOf": {
+            "title": "UpdateAction",
+            "url": "http://schema.org/UpdateAction"
+        }
+    },
+    "$ReplyAction": {
+        "rdfsClass": "ReplyAction",
+        "rdfsComment": "The act of responding to a \nquestion/message asked/sent by the object. Related to \n[[AskAction]]\\n\\nRelated actions:\\n\\n* [[AskAction]]: Appears generally \nas an origin of a ReplyAction.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$ReserveAction": {
+        "rdfsClass": "ReserveAction",
+        "rdfsComment": "Reserving a concrete \nobject.\\n\\nRelated actions:\\n\\n* [[ScheduleAction]]</a>: Unlike \nScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a\n hotel) towards a time slot / spatial allocation.",
+        "rdfsSubClassOf": {
+            "title": "PlanAction",
+            "url": "http://schema.org/PlanAction"
+        }
+    },
+    "$ResumeAction": {
+        "rdfsClass": "ResumeAction",
+        "rdfsComment": "The act of resuming a device or application which was formerly paused (e.g. resume music playback or resume a timer).",
+        "rdfsSubClassOf": {
+            "title": "ControlAction",
+            "url": "http://schema.org/ControlAction"
+        }
+    },
+    "$ReturnAction": {
+        "rdfsClass": "ReturnAction",
+        "rdfsComment": "The act of returning to the origin that which was previously received (concrete objects) or taken (ownership).",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$ReviewAction": {
+        "rdfsClass": "ReviewAction",
+        "rdfsComment": "The act of producing a balanced \nopinion about the object for an audience. An agent reviews an object \nwith participants resulting in a review.",
+        "rdfsSubClassOf": {
+            "title": "AssessAction",
+            "url": "http://schema.org/AssessAction"
+        }
+    },
+    "$RsvpAction": {
+        "rdfsClass": "RsvpAction",
+        "rdfsComment": "The act of notifying an event organizer as to whether you expect to attend the event.",
+        "rdfsSubClassOf": {
+            "title": "InformAction",
+            "url": "http://schema.org/InformAction"
+        }
+    },
+    "$ScheduleAction": {
+        "rdfsClass": "ScheduleAction",
+        "rdfsComment": "Scheduling future actions, events, \nor tasks.\\n\\nRelated actions:\\n\\n* [[ReserveAction]]: Unlike \nReserveAction, ScheduleAction allocates future actions (e.g. an event, a\n task, etc) towards a time slot / spatial allocation.",
+        "rdfsSubClassOf": {
+            "title": "PlanAction",
+            "url": "http://schema.org/PlanAction"
+        }
+    },
+    "$SearchAction": {
+        "rdfsClass": "SearchAction",
+        "rdfsComment": "The act of searching for an \nobject.\\n\\nRelated actions:\\n\\n* [[FindAction]]: SearchAction generally \nleads to a FindAction, but not necessarily.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$SellAction": {
+        "rdfsClass": "SellAction",
+        "rdfsComment": "The act of taking money from a buyer\n in exchange for goods or services rendered. An agent sells an object, \nproduct, or service to a buyer for a price. Reciprocal of BuyAction.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$SendAction": {
+        "rdfsClass": "SendAction",
+        "rdfsComment": "The act of physically/electronically\n dispatching an object for transfer from an origin to a \ndestination.Related actions:\\n\\n* [[ReceiveAction]]: The reciprocal of \nSendAction.\\n* [[GiveAction]]: Unlike GiveAction, SendAction does not \nimply the transfer of ownership (e.g. I can send you my laptop, but I'm \nnot necessarily giving it to you).",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$ShareAction": {
+        "rdfsClass": "ShareAction",
+        "rdfsComment": "The act of distributing content to people for their amusement or edification.",
+        "rdfsSubClassOf": {
+            "title": "CommunicateAction",
+            "url": "http://schema.org/CommunicateAction"
+        }
+    },
+    "$SubscribeAction": {
+        "rdfsClass": "SubscribeAction",
+        "rdfsComment": "The act of forming a personal \nconnection with someone/something (object) \nunidirectionally/asymmetrically to get updates pushed to.\\n\\nRelated \nactions:\\n\\n* [[FollowAction]]: Unlike FollowAction, SubscribeAction \nimplies that the subscriber acts as a passive agent being \nconstantly/actively pushed for updates.\\n* [[RegisterAction]]: Unlike \nRegisterAction, SubscribeAction implies that the agent is interested in \ncontinuing receiving updates from the object.\\n* [[JoinAction]]: Unlike \nJoinAction, SubscribeAction implies that the agent is interested in \ncontinuing receiving updates from the object.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$SuspendAction": {
+        "rdfsClass": "SuspendAction",
+        "rdfsComment": "The act of momentarily pausing a device or application (e.g. pause music playback or pause a timer).",
+        "rdfsSubClassOf": {
+            "title": "ControlAction",
+            "url": "http://schema.org/ControlAction"
+        }
+    },
+    "$TakeAction": {
+        "rdfsClass": "TakeAction",
+        "rdfsComment": "The act of gaining ownership of an \nobject from an origin. Reciprocal of GiveAction.\\n\\nRelated \nactions:\\n\\n* [[GiveAction]]: The reciprocal of TakeAction.\\n* \n[[ReceiveAction]]: Unlike ReceiveAction, TakeAction implies that \nownership has been transfered.",
+        "rdfsSubClassOf": {
+            "title": "TransferAction",
+            "url": "http://schema.org/TransferAction"
+        }
+    },
+    "$TieAction": {
+        "rdfsClass": "TieAction",
+        "rdfsComment": "The act of reaching a draw in a competitive activity.",
+        "rdfsSubClassOf": {
+            "title": "AchieveAction",
+            "url": "http://schema.org/AchieveAction"
+        }
+    },
+    "$TipAction": {
+        "rdfsClass": "TipAction",
+        "rdfsComment": "The act of giving money voluntarily to a beneficiary in recognition of services rendered.",
+        "rdfsSubClassOf": {
+            "title": "TradeAction",
+            "url": "http://schema.org/TradeAction"
+        }
+    },
+    "$TrackAction": {
+        "rdfsClass": "TrackAction",
+        "rdfsComment": "An agent tracks an object for \nupdates.\\n\\nRelated actions:\\n\\n* [[FollowAction]]: Unlike FollowAction,\n TrackAction refers to the interest on the location of innanimates \nobjects.\\n* [[SubscribeAction]]: Unlike SubscribeAction, TrackAction \nrefers to  the interest on the location of innanimate objects.",
+        "rdfsSubClassOf": {
+            "title": "FindAction",
+            "url": "http://schema.org/FindAction"
+        }
+    },
+    "$TradeAction": {
+        "rdfsClass": "TradeAction",
+        "rdfsComment": "The act of participating in an \nexchange of goods and services for monetary compensation. An agent \ntrades an object, product or service with a participant in exchange for a\n one time or periodic payment.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$TransferAction": {
+        "rdfsClass": "TransferAction",
+        "rdfsComment": "The act of transferring/moving (abstract or concrete) animate or inanimate objects from one place to another.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$TravelAction": {
+        "rdfsClass": "TravelAction",
+        "rdfsComment": "The act of traveling from an fromLocation to a destination by a specified mode of transport, optionally with participants.",
+        "rdfsSubClassOf": {
+            "title": "MoveAction",
+            "url": "http://schema.org/MoveAction"
+        }
+    },
+    "$UnRegisterAction": {
+        "rdfsClass": "UnRegisterAction",
+        "rdfsComment": "The act of un-registering from a \nservice.\\n\\nRelated actions:\\n\\n* [[RegisterAction]]: antonym of \nUnRegisterAction.\\n* [[Leave]]: Unlike LeaveAction, UnRegisterAction \nimplies that you are unregistering from a service you werer previously \nregistered, rather than leaving a team/group of people.",
+        "rdfsSubClassOf": {
+            "title": "InteractAction",
+            "url": "http://schema.org/InteractAction"
+        }
+    },
+    "$UpdateAction": {
+        "rdfsClass": "UpdateAction",
+        "rdfsComment": "The act of managing by changing/editing the state of the object.",
+        "rdfsSubClassOf": {
+            "title": "Action",
+            "url": "http://schema.org/Action"
+        }
+    },
+    "$UseAction": {
+        "rdfsClass": "UseAction",
+        "rdfsComment": "The act of applying an object to its intended purpose.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$ViewAction": {
+        "rdfsClass": "ViewAction",
+        "rdfsComment": "The act of consuming static visual content.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$VoteAction": {
+        "rdfsClass": "VoteAction",
+        "rdfsComment": "The act of expressing a preference from a fixed/finite/structured set of choices/options.",
+        "rdfsSubClassOf": {
+            "title": "ChooseAction",
+            "url": "http://schema.org/ChooseAction"
+        }
+    },
+    "$WantAction": {
+        "rdfsClass": "WantAction",
+        "rdfsComment": "The act of expressing a desire about the object. An agent wants an object.",
+        "rdfsSubClassOf": {
+            "title": "ReactAction",
+            "url": "http://schema.org/ReactAction"
+        }
+    },
+    "$WatchAction": {
+        "rdfsClass": "WatchAction",
+        "rdfsComment": "The act of consuming dynamic/moving visual content.",
+        "rdfsSubClassOf": {
+            "title": "ConsumeAction",
+            "url": "http://schema.org/ConsumeAction"
+        }
+    },
+    "$WearAction": {
+        "rdfsClass": "WearAction",
+        "rdfsComment": "The act of dressing oneself in clothing.",
+        "rdfsSubClassOf": {
+            "title": "UseAction",
+            "url": "http://schema.org/UseAction"
+        }
+    },
+    "$WinAction": {
+        "rdfsClass": "WinAction",
+        "rdfsComment": "The act of achieving victory in a competitive activity.",
+        "rdfsSubClassOf": {
+            "title": "AchieveAction",
+            "url": "http://schema.org/AchieveAction"
+        }
+    },
+    "$WriteAction": {
+        "rdfsClass": "WriteAction",
+        "rdfsComment": "The act of authoring written creative content.",
+        "rdfsSubClassOf": {
+            "title": "CreateAction",
+            "url": "http://schema.org/CreateAction"
+        }
+    }
+}

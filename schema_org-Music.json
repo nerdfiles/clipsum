@@ -1,0 +1,106 @@
+{
+    "$MusicAlbum": {
+        "rdfsClass": "MusicAlbum",
+        "rdfsComment": "A collection of music tracks.",
+        "rdfsSubClassOf": {
+            "title": "MusicPlaylist",
+            "url": "http://schema.org/MusicPlaylist"
+        }
+    },
+    "$MusicAlbumProductionType": {
+        "rdfsClass": "MusicAlbumProductionType",
+        "rdfsComment": "Classification of the album by it's type of content: soundtrack, live album, studio album, etc.",
+        "rdfsSubClassOf": {
+            "title": "Enumeration",
+            "url": "http://schema.org/Enumeration"
+        }
+    },
+    "$MusicAlbumReleaseType": {
+        "rdfsClass": "MusicAlbumReleaseType",
+        "rdfsComment": "The kind of release which this album is: single, EP or album.",
+        "rdfsSubClassOf": {
+            "title": "Enumeration",
+            "url": "http://schema.org/Enumeration"
+        }
+    },
+    "$MusicComposition": {
+        "rdfsClass": "MusicComposition",
+        "rdfsComment": "A musical composition.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    },
+    "$MusicEvent": {
+        "rdfsClass": "MusicEvent",
+        "rdfsComment": "Event type: Music event.",
+        "rdfsSubClassOf": {
+            "title": "Event",
+            "url": "http://schema.org/Event"
+        }
+    },
+    "$MusicGroup": {
+        "rdfsClass": "MusicGroup",
+        "rdfsComment": "A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.",
+        "rdfsSubClassOf": {
+            "title": "PerformingGroup",
+            "url": "http://schema.org/PerformingGroup"
+        }
+    },
+    "$MusicPlaylist": {
+        "rdfsClass": "MusicPlaylist",
+        "rdfsComment": "A collection of music tracks in playlist form.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    },
+    "$MusicRecording": {
+        "rdfsClass": "MusicRecording",
+        "rdfsComment": "A music recording (track), usually a single song.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    },
+    "$MusicRelease": {
+        "rdfsClass": "MusicRelease",
+        "rdfsComment": "A MusicRelease is a specific release of a music album.",
+        "rdfsSubClassOf": {
+            "title": "MusicPlaylist",
+            "url": "http://schema.org/MusicPlaylist"
+        }
+    },
+    "$MusicReleaseFormatType": {
+        "rdfsClass": "MusicReleaseFormatType",
+        "rdfsComment": "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
+        "rdfsSubClassOf": {
+            "title": "Enumeration",
+            "url": "http://schema.org/Enumeration"
+        }
+    },
+    "$MusicStore": {
+        "rdfsClass": "MusicStore",
+        "rdfsComment": "A music store.",
+        "rdfsSubClassOf": {
+            "title": "Store",
+            "url": "http://schema.org/Store"
+        }
+    },
+    "$MusicVenue": {
+        "rdfsClass": "MusicVenue",
+        "rdfsComment": "A music venue.",
+        "rdfsSubClassOf": {
+            "title": "CivicStructure",
+            "url": "http://schema.org/CivicStructure"
+        }
+    },
+    "$MusicVideoObject": {
+        "rdfsClass": "MusicVideoObject",
+        "rdfsComment": "A music video file.",
+        "rdfsSubClassOf": {
+            "title": "MediaObject",
+            "url": "http://schema.org/MediaObject"
+        }
+    }
+}

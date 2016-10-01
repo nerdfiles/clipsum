@@ -1,0 +1,34 @@
+{
+    "$WebApplication": {
+        "rdfsClass": "WebApplication",
+        "rdfsComment": "Web applications.",
+        "rdfsSubClassOf": {
+            "title": "SoftwareApplication",
+            "url": "http://schema.org/SoftwareApplication"
+        }
+    },
+    "$WebPage": {
+        "rdfsClass": "WebPage",
+        "rdfsComment": "A web page. Every web page is \nimplicitly assumed to be declared to be of type WebPage, so the various \nproperties about that webpage, such as \n<code>breadcrumb</code> may be used. We recommend explicit \ndeclaration if these properties are specified, but if they are found \noutside of an itemscope, they will be assumed to be about the page.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    },
+    "$WebPageElement": {
+        "rdfsClass": "WebPageElement",
+        "rdfsComment": "A web page element, like a table or an image.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    },
+    "$WebSite": {
+        "rdfsClass": "WebSite",
+        "rdfsComment": "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs.",
+        "rdfsSubClassOf": {
+            "title": "CreativeWork",
+            "url": "http://schema.org/CreativeWork"
+        }
+    }
+}
