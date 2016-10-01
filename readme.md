@@ -3,9 +3,10 @@
 [![Build Status][travisimg]][travis]
 
     Usage:
-      lorem all
-      lorem get <id>
-      lorem -h | --help | --version
+      node index.js all
+      node index.js get <id>
+      node index.js -h | --help
+      node index.js --version
 
 
 [travisimg]: https://api.travis-ci.org/nerdfiles/clipsum.svg
