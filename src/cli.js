@@ -9,10 +9,10 @@
 
 let cli = __parser__(function () {/*!
 Usage:
-  lorem all
-  lorem get <id>
-  lorem -h | --help
-  lorem --version
+  clipsum all
+  clipsum get <id>
+  clipsum -h | --help
+  clipsum --version
 */});
 
 function __parser__ (f) {
