@@ -90,15 +90,15 @@ function __cli__ (config) {
     API.baseUrl = hostConfig.default
   }).then(function () {
     if (config['all']) {
-        API.all(config['<contenttype>'])
+      API.all(config['<contenttype>'])
     } else if (config['get']) {
-        let config_id = null
-        if (!config['<id>']) {
-          config_id = 1
-        } else {
-          config_id = config['<id>']
-        }
-        API.get(config['<contenttype>'], config_id)
+      let config_id = null
+      if (!config['<id>']) {
+        config_id = 1
+      } else {
+        config_id = config['<id>']
+      }
+      API.get(config['<contenttype>'], config_id)
     } else {
       console.log('No command provided.')
     }
