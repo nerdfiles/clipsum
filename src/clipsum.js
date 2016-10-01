@@ -7,10 +7,10 @@
 
 'use strict'
 
+let cli = require('./cli')
+let docopt = require('docopt-js')
 let defer = require('promise-defer')
 let request = require('request')
-let docopt = require('docopt-js')
-let cli = require('./cli')
 
 function __cli__ (config) {
   let API = {
