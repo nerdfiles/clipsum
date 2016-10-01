@@ -16,18 +16,36 @@ let request = require('request')
 function __cli__ (config) {
 
   let API = {
+
     baseUrl: 'http://jsonplaceholder.typicode.com/',
 
-    all () {
-      this.request('posts').then(function (result) {
+    all (contenttype) {
+      let ct = contenttype || 'posts'
+      this.request(ct).then(function (result) {
         console.log(result)
       }, function (error, result) {
         console.log(result)
       })
     },
 
-    get (id) {
-      this.request('posts/' + id).then(function (result) {
+    get (contenttype, id) {
+      let ct = contenttype || 'posts'
+      let $$id = id || 1
+      let requestString = ct + '/' + $$id
+
+      if (ct === 'post_comments') {
+        requestString = 'posts/' + $$id + '/comments'
+      }
+
+      if (ct === 'comments') {
+        requestString = ct + '?postId=' + $$id
+      }
+
+      if (ct === 'posts_by_user') {
+        requestString = 'posts?userId=' + $$id
+      }
+
+      this.request(requestString).then(function (result) {
         console.log(result)
       }, function (error, result) {
         console.log(result)
@@ -55,9 +73,15 @@ function __cli__ (config) {
   }
 
   if (config['all']) {
-      API.all()
+      API.all(config['<contenttype>'])
   } else if (config['get']) {
-      API.get(config['<id>'])
+      let config_id = null
+      if (!config['<id>']) {
+        config_id = 1
+      } else {
+        config_id = config['<id>']
+      }
+      API.get(config['<contenttype>'], config_id)
   } else {
     console.log('No command provided.')
   }

@@ -9,8 +9,8 @@
 
 let cli = __parser__(function () {/*!
 Usage:
-  clipsum all
-  clipsum get <id>
+  clipsum all <contenttype>
+  clipsum get <contenttype> [<id>]
   clipsum -h | --help
   clipsum --version
 */});
