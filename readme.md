@@ -26,6 +26,19 @@
 
 [See more][jsonplaceholder]...
 
+## Use `json-server`
+
+    $ npm install -g json-server
+    $ json-server --watch db.json
+
+### Reconfigure `host.json`
+
+After you've installed `json-server` and updated `db.json`, configure your 
+`host.json` file to point to the prepared `json-server` base endpoint.
+
+[See more][jsonserver]...
+
 [travisimg]: https://api.travis-ci.org/nerdfiles/clipsum.svg
 [travis]: https://travis-ci.org/nerdfiles/clipsum
 [jsonplaceholder]: http://jsonplaceholder.typicode.com/
+[jsonserver]: https://github.com/typicode/json-server

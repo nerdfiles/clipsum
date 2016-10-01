@@ -9,15 +9,29 @@
 
 let cli = require('./cli')
 let docopt = require('docopt-js')
+
 let defer = require('promise-defer')
+let fs = require('fs')
 let request = require('request')
 
+let host
+
+function __host__ () {
+
+  let def = defer()
+
+  fs.readFile(__dirname + '/../host.json', 'utf-8', function (error, data) {
+    if (error)  throw error
+    host = JSON.parse(data)
+    def.resolve(host)
+  })
+
+  return def.promise
+}
 
 function __cli__ (config) {
 
   let API = {
-
-    baseUrl: 'http://jsonplaceholder.typicode.com/',
 
     all (contenttype) {
       let ct = contenttype || 'posts'
@@ -72,19 +86,23 @@ function __cli__ (config) {
     }
   }
 
-  if (config['all']) {
-      API.all(config['<contenttype>'])
-  } else if (config['get']) {
-      let config_id = null
-      if (!config['<id>']) {
-        config_id = 1
-      } else {
-        config_id = config['<id>']
-      }
-      API.get(config['<contenttype>'], config_id)
-  } else {
-    console.log('No command provided.')
-  }
+  __host__().then(function (hostConfig) {
+    API.baseUrl = hostConfig.default
+  }).then(function () {
+    if (config['all']) {
+        API.all(config['<contenttype>'])
+    } else if (config['get']) {
+        let config_id = null
+        if (!config['<id>']) {
+          config_id = 1
+        } else {
+          config_id = config['<id>']
+        }
+        API.get(config['<contenttype>'], config_id)
+    } else {
+      console.log('No command provided.')
+    }
+  })
 
 }
 
