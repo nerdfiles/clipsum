@@ -3,6 +3,7 @@
 [![Build Status][travisimg]][travis]
 
     Usage:
+
       clipsum all <contenttype>       #defaults to 'posts'
       clipsum get <contenttype> <id>  #defaults to 'posts'
       clipsum -h | --help
