@@ -9,25 +9,8 @@
 
 let defer = require('promise-defer')
 let request = require('request')
-let docopt = require('docopt-js');
-
-let cli = __parser__(function () {/*!
-Usage:
-  node index.js all
-  node index.js get <id>
-  node index.js -h | --help
-  node index.js --version
-*/});
-
-function __parser__ (f) {
-  /// @inner
-  /// @description
-  /// Simple comment-based usage document parser.
-
-  return f.toString().
-    replace(/^[^\/]+\/\*!?/, '').
-    replace(/\*\/[^\/]+$/, '');
-}
+let docopt = require('docopt-js')
+let cli = require('./cli')
 
 function __cli__ (config) {
   let API = {
