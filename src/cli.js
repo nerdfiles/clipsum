@@ -16,7 +16,7 @@ Usage:
 */});
 
 function __parser__ (f) {
-  /// @inner
+  /// @name __parser__
   /// @description
   /// Simple comment-based usage document parser.
 
