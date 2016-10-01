@@ -12,7 +12,9 @@ let docopt = require('docopt-js')
 let defer = require('promise-defer')
 let request = require('request')
 
+
 function __cli__ (config) {
+
   let API = {
     baseUrl: 'http://jsonplaceholder.typicode.com/',
 
@@ -22,7 +24,6 @@ function __cli__ (config) {
       }, function (error, result) {
         console.log(result)
       })
-
     },
 
     get (id) {
@@ -57,11 +58,12 @@ function __cli__ (config) {
       API.all()
   } else if (config['get']) {
       API.get(config['<id>'])
-  } else
+  } else {
     console.log('No command provided.')
+  }
 
 }
 
+
 let initConfig = docopt.docopt(cli, { version: '0.0.1' })
 module.exports = __cli__(initConfig)
-
